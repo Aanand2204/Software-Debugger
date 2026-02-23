@@ -1,0 +1,8 @@
+pyautogen[gemini]<0.3
+streamlit
+firebase-admin
+python-dotenv
+openai
+langchain
+gitpython
+google-generativeai
