@@ -19,18 +19,28 @@ def init_firebase():
                 return None
                 
             # Check if it's a JSON string or a file path
-            if service_account_info.startswith('{') and service_account_info.endswith('}'):
                 import json
                 try:
-                    # use strict=False to handle literal newlines or control chars often found in secrets
+                    # try standard json loading first
                     cred_dict = json.loads(service_account_info, strict=False)
-                    cred = credentials.Certificate(cred_dict)
-                    logger.info("Initializing Firebase from JSON string.")
                 except Exception as e:
-                    logger.error(f"Failed to parse Firebase JSON string: {e}")
-                    # Log the first 50 chars for debugging (masked for security)
-                    snippet = service_account_info[:50] + "..."
-                    logger.error(f"JSON Snippet: {snippet}")
+                    logger.warning(f"Standard JSON parse failed, trying literal_eval: {e}")
+                    try:
+                        # ast.literal_eval can often handle the backslashes in TOML-provided strings better
+                        import ast
+                        cred_dict = ast.literal_eval(service_account_info)
+                    except Exception as e2:
+                        logger.error(f"Failed to parse Firebase JSON string: {e}")
+                        # Log the first 50 chars for debugging (masked for security)
+                        snippet = service_account_info[:50] + "..."
+                        logger.error(f"JSON Snippet: {snippet}")
+                        return None
+                
+                try:
+                    cred = credentials.Certificate(cred_dict)
+                    logger.info("Initializing Firebase from JSON string/literal.")
+                except Exception as e:
+                    logger.error(f"Firebase certificate creation failed: {e}")
                     return None
             else:
                 if not os.path.exists(service_account_info):
