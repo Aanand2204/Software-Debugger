@@ -23,7 +23,7 @@ class Config:
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
     GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
     FIREBASE_SERVICE_ACCOUNT = os.getenv("FIREBASE_SERVICE_ACCOUNT", "").strip('\"\'')
-    if FIREBASE_SERVICE_ACCOUNT:
+    if FIREBASE_SERVICE_ACCOUNT and not FIREBASE_SERVICE_ACCOUNT.startswith('{'):
         FIREBASE_SERVICE_ACCOUNT = os.path.abspath(os.path.normpath(FIREBASE_SERVICE_ACCOUNT))
     DATABASE_URL = os.getenv("DATABASE_URL")
     
