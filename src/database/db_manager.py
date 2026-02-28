@@ -19,6 +19,7 @@ def init_firebase():
                 return None
                 
             # Check if it's a JSON string or a file path
+            if service_account_info.startswith('{'):
                 import json
                 try:
                     # try standard json loading first
