@@ -38,10 +38,15 @@ def init_firebase():
                         return None
                 
                 try:
-                    # Sanitize the private_key: ensure literal \n is converted to actual newlines
+                    # Sanitize the private_key to be strictly PEM compatible
                     if isinstance(cred_dict, dict) and "private_key" in cred_dict:
-                        # Some environments/secrets managers double-escape newlines
-                        cred_dict["private_key"] = cred_dict["private_key"].replace("\\n", "\n")
+                        pk = cred_dict["private_key"]
+                        # 1. Convert literal "\\n" or "\n" (if escaping persisted) to actual newlines
+                        pk = pk.replace("\\n", "\n")
+                        # 2. Remove any remaining literal backslashes. 
+                        # Base64/PEM never uses backslashes except for JSON-encoded escapes.
+                        pk = pk.replace("\\", "")
+                        cred_dict["private_key"] = pk
                     
                     cred = credentials.Certificate(cred_dict)
                     logger.info("Initializing Firebase from JSON string/literal.")
