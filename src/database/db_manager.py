@@ -12,12 +12,29 @@ def init_firebase():
         
     try:
         if not firebase_admin._apps:
-            service_account_path = Config.FIREBASE_SERVICE_ACCOUNT
-            if not service_account_path or not os.path.exists(service_account_path):
-                logger.warning(f"Firebase service account file not found at: {service_account_path}. Persistence disabled.")
+            service_account_info = Config.FIREBASE_SERVICE_ACCOUNT
+            
+            if not service_account_info:
+                logger.warning("Firebase service account not configured. Persistence disabled.")
                 return None
                 
-            cred = credentials.Certificate(service_account_path)
+            # Check if it's a JSON string or a file path
+            if service_account_info.startswith('{'):
+                import json
+                try:
+                    cred_dict = json.loads(service_account_info)
+                    cred = credentials.Certificate(cred_dict)
+                    logger.info("Initializing Firebase from JSON string.")
+                except Exception as e:
+                    logger.error(f"Failed to parse Firebase JSON string: {e}")
+                    return None
+            else:
+                if not os.path.exists(service_account_info):
+                    logger.warning(f"Firebase service account file not found at: {service_account_info}. Persistence disabled.")
+                    return None
+                cred = credentials.Certificate(service_account_info)
+                logger.info(f"Initializing Firebase from file: {service_account_info}")
+
             firebase_admin.initialize_app(cred, {
                 'databaseURL': Config.DATABASE_URL
             })
