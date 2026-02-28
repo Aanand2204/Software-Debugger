@@ -38,6 +38,11 @@ def init_firebase():
                         return None
                 
                 try:
+                    # Sanitize the private_key: ensure literal \n is converted to actual newlines
+                    if isinstance(cred_dict, dict) and "private_key" in cred_dict:
+                        # Some environments/secrets managers double-escape newlines
+                        cred_dict["private_key"] = cred_dict["private_key"].replace("\\n", "\n")
+                    
                     cred = credentials.Certificate(cred_dict)
                     logger.info("Initializing Firebase from JSON string/literal.")
                 except Exception as e:
