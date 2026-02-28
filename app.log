@@ -1,0 +1,270 @@
+2026-02-25 10:38:06,805 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-02-25 10:38:24,215 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:38:30,708 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:38:30,928 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:38:35,168 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmp_8ibuyu_
+2026-02-25 10:38:35,410 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-02-25 10:38:35,798 - SoftwareDebugger - ERROR - Quota Exceeded (429). Please wait a minute and try again.
+2026-02-25 10:48:40,514 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-02-25 10:48:40,516 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-02-25 10:48:58,818 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:49:38,819 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-02-25 10:51:35,035 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-02-25 10:51:35,053 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:51:41,324 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:51:45,723 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmp9wxp19dc
+2026-02-25 10:51:46,390 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-02-25 10:52:12,024 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:52:52,026 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-02-25 10:53:15,746 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:53:55,749 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-02-25 10:53:57,090 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-02-25 10:53:57,266 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:53:57,266 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:53:57,266 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:54:01,041 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 10:54:04,722 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpz6gwzwmy
+2026-02-25 10:54:05,102 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-02-25 10:54:15,113 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:54:51,650 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:54:55,114 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-02-25 10:54:55,133 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:55:31,651 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-02-25 10:55:35,135 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-02-25 10:55:35,210 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 10:56:15,211 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-02-25 20:11:48,194 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-02-25 20:12:03,074 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 20:12:15,809 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 20:12:16,035 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-02-25 20:12:17,169 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpnvdj3juo
+2026-02-25 20:12:17,187 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-02-25 20:12:43,559 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 20:13:23,561 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-02-25 20:13:45,687 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 20:14:25,688 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-02-25 20:14:59,764 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-02-25 20:15:39,765 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 00:25:46,359 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:25:46,359 - SoftwareDebugger - ERROR - Error initializing Firebase: name 'os' is not defined
+2026-03-01 00:26:04,337 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:26:04,338 - SoftwareDebugger - ERROR - Error initializing Firebase: name 'os' is not defined
+2026-03-01 00:26:30,859 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:26:30,859 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:40:45,498 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:40:59,647 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:40:59,647 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:42:10,601 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:42:10,601 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:42:10,819 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:42:10,819 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:42:14,658 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpvxtgvqq3
+2026-03-01 00:42:15,419 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-03-01 00:42:27,294 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:42:27,309 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:42:27,318 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:43:07,319 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 00:43:09,447 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:43:09,449 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:43:09,454 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:43:49,456 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 00:43:51,367 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:43:51,369 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:43:51,373 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:44:31,377 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 00:44:32,823 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:44:32,826 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:44:32,836 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:44:32,842 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:45:13,183 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:45:13,187 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:45:15,173 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:45:15,173 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:45:15,183 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:46:03,473 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:46:03,474 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentialsirebase.json. Persistence disabled.
+2026-03-01 00:46:28,428 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:46:28,432 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:/Software_Debugger/credentials/firebase.json. Persistence disabled.
+2026-03-01 00:46:47,564 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:47:00,680 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:47:06,586 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:47:06,587 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:/Software_Debugger/credentials/firebase.json. Persistence disabled.
+2026-03-01 00:47:21,022 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:47:46,873 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:47:46,873 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:/Software_Debugger/credentials/software-debugger-fbsvc-77ce655881f.json. Persistence disabled.
+2026-03-01 00:48:31,990 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:49:02,658 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:49:02,659 - SoftwareDebugger - WARNING - Firebase service account file not found at: D:\Software_Debugger\credentials\software-debugger-fbsvc-77ce655881f.json. Persistence disabled.
+2026-03-01 00:49:18,737 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:50:06,394 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:50:06,447 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-01 00:50:07,606 - SoftwareDebugger - ERROR - Failed to fetch history from Firestore: 404 The database (default) does not exist for project software-debugger Please visit https://console.cloud.google.com/datastore/setup?project=software-debugger to add a Cloud Datastore or Cloud Firestore database. 
+2026-03-01 00:50:44,034 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 00:51:05,332 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:51:05,394 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-01 00:51:18,290 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:51:18,528 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:51:22,108 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpuyu8mbrr
+2026-03-01 00:51:22,389 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-03-01 00:51:32,416 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:52:12,417 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 00:52:12,429 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:52:52,430 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 00:52:52,450 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:53:32,452 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 00:53:33,284 - SoftwareDebugger - ERROR - Failed to save analysis to Firestore: 404 The database (default) does not exist for project software-debugger Please visit https://console.cloud.google.com/datastore/setup?project=software-debugger to add a Cloud Datastore or Cloud Firestore database. 
+2026-03-01 00:53:33,850 - SoftwareDebugger - ERROR - Failed to fetch history from Firestore: 404 The database (default) does not exist for project software-debugger Please visit https://console.cloud.google.com/datastore/setup?project=software-debugger to add a Cloud Datastore or Cloud Firestore database. 
+2026-03-01 00:54:32,817 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:54:33,388 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:54:33,398 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:54:33,700 - SoftwareDebugger - ERROR - Failed to fetch history from Firestore: 404 The database (default) does not exist for project software-debugger Please visit https://console.cloud.google.com/datastore/setup?project=software-debugger to add a Cloud Datastore or Cloud Firestore database. 
+2026-03-01 00:54:43,760 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:54:44,660 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 00:54:44,660 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 00:54:44,974 - SoftwareDebugger - ERROR - Failed to fetch history from Firestore: 404 The database (default) does not exist for project software-debugger Please visit https://console.cloud.google.com/datastore/setup?project=software-debugger to add a Cloud Datastore or Cloud Firestore database. 
+2026-03-01 00:58:49,554 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:58:54,519 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:58:54,736 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 00:58:58,271 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpc4t99ya8
+2026-03-01 00:58:58,488 - SoftwareDebugger - INFO - Starting Parsing Phase... (Adding initial 10s delay to avoid burst limits)
+2026-03-01 00:59:08,509 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 00:59:48,510 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 00:59:48,519 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 01:00:28,522 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 01:00:28,537 - SoftwareDebugger - INFO - Waiting for quota reset (40s)...
+2026-03-01 01:01:08,539 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 01:01:09,218 - SoftwareDebugger - INFO - Analysis for https://github.com/delaford/game saved to Firestore.
+2026-03-01 01:03:24,128 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:03:24,133 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:04:09,876 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:04:09,879 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:56,043 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:05:56,051 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:56,051 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:58,259 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:58,487 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:58,679 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:58,882 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:59,073 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:05:59,237 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:10,748 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:06:10,755 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:10,755 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:12,608 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:12,645 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:12,820 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:13,178 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:13,362 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:31,225 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:06:31,229 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:06:40,717 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:06:40,721 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:07:03,358 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:07:07,025 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmp_hsjely3
+2026-03-01 01:07:07,232 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-01 01:07:12,252 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 01:07:32,266 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 01:07:52,289 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 01:08:12,308 - SoftwareDebugger - INFO - Starting Diagram Generation Phase...
+2026-03-01 01:08:35,149 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:08:35,149 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:08:35,227 - SoftwareDebugger - INFO - Analysis for https://github.com/delaford/game saved to Firestore.
+2026-03-01 01:10:51,946 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:10:51,953 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:10:51,953 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:10:53,758 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:11:12,109 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:11:12,112 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:12:23,404 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:12:23,408 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:13:03,771 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:14:02,385 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:14:02,390 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:14:02,390 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:15,430 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:16:15,439 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:15,439 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:16,837 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:33,622 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:16:33,631 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:33,631 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:35,036 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:35,178 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:35,328 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:35,478 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:35,623 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:41,843 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:16:41,846 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:16:49,123 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:16:49,127 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:17:56,462 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:17:56,466 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:01,757 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:01,910 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:02,065 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:12,469 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:16,618 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:19,848 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:21,483 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:24,293 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:18:45,661 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:19:29,726 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:19:32,250 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:19:34,306 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:05,996 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:21:06,004 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:06,005 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:08,744 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:09,008 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:09,233 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:09,601 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:09,817 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:25,573 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:21:25,577 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:55,395 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:57,308 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:21:58,976 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:22:00,533 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:22:03,990 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpdw2bn5bd
+2026-03-01 01:22:04,232 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-01 01:22:11,177 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:22:11,178 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:22:11,179 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 01:22:33,388 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:22:33,389 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:22:33,390 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 01:22:55,342 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:22:55,343 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:22:55,344 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 01:23:04,867 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:23:04,869 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:23:14,447 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:23:17,350 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:23:17,354 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:23:17,354 - SoftwareDebugger - INFO - Starting Diagram Generation Phase for: ['Activity Diagram']...
+2026-03-01 01:23:37,943 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:23:37,948 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:24:29,444 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:24:29,453 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:29,453 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:31,302 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:31,477 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:31,658 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:31,912 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:32,098 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:24:49,082 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:24:49,082 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:25:11,543 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:25:11,549 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Activity Diagram', 'Class Diagram']...
+2026-03-01 01:25:12,923 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:25:12,928 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:25:12,988 - SoftwareDebugger - INFO - Analysis for https://github.com/delaford/game saved to Firestore.
+2026-03-01 01:25:46,633 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 01:25:46,637 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:25:47,898 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:26:45,446 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:26:47,985 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 01:26:47,995 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Activity Diagram', 'Class Diagram', 'ER Diagram']...
+2026-03-01 01:26:49,521 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 01:26:49,523 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 01:26:49,590 - SoftwareDebugger - INFO - Analysis for https://github.com/delaford/game saved to Firestore.

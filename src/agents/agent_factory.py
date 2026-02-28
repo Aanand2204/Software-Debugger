@@ -3,17 +3,31 @@ from src.config import Config
 
 class AgentFactory:
     def __init__(self):
-        # Specific config for Autogen 0.2.x Gemini support
+        # Dynamically build the config list based on available keys
+        config_list = []
+        
+        # Add Groq keys if available (Primary)
+        groq_keys = Config.get_groq_keys()
+        for key in groq_keys:
+            config_list.append({
+                "model": Config.GROQ_MODEL,
+                "api_key": key,
+                "base_url": "https://api.groq.com/openai/v1",
+                "api_type": "openai"
+            })
+        
+        # Add Gemini key (Fallback)
+        if Config.GOOGLE_API_KEY:
+            config_list.append({
+                "model": Config.MODEL,
+                "api_key": Config.GOOGLE_API_KEY,
+                "api_type": "google"
+            })
+
         self.llm_config = {
-            "config_list": [
-                {
-                    "model": Config.MODEL,
-                    "api_key": Config.GOOGLE_API_KEY,
-                    "api_type": "google"
-                }
-            ],
+            "config_list": config_list,
             "temperature": 0.2,
-            "max_retries": 3,
+            "cache_seed": None, # Disable caching to ensure fresh results for diagram selection
         }
 
     def create_code_parser_agent(self):
@@ -48,6 +62,36 @@ class AgentFactory:
         return AssistantAgent(
             name="Reviewer",
             system_message="Review analysis, patches, and tests. Provide final approval.",
+            llm_config=self.llm_config,
+        )
+
+    def create_diagram_generator_agent(self):
+        return AssistantAgent(
+            name="Diagram_Generator",
+            system_message="""You are an expert at software architecture and system design.
+            Based on the provided codebase summary, generate Mermaid diagrams for the requested types.
+            
+            STRICT RULES for Mermaid Syntax:
+            1. ONLY use standard diagram types: 'graph TD' (for Flowcharts/System Design), 'classDiagram', 'sequenceDiagram', 'stateDiagram-v2', 'erDiagram', 'gantt', 'pie'.
+            2. NEVER use 'architecture' as a type.
+            3. ALWAYS wrap node labels in double quotes. Example: A["Component (v1.0)"]
+            4. Node IDs must be simple alphanumeric strings (e.g., node1, app_core). NEVER use punctuation or spaces in IDs.
+            5. For Flowcharts, always start with 'graph TD'.
+            
+            Deliverables:
+            Provide a separate ```mermaid block for EVERY specific diagram type requested.
+            Label each block with a clear Markdown header (e.g. ### Class Diagram).
+            Be accurate and technical.""",
+            llm_config=self.llm_config,
+        )
+
+    def create_repo_chat_agent(self):
+        return AssistantAgent(
+            name="Repo_Chat_Agent",
+            system_message="""You are a helpful software engineering assistant. 
+            You have access to a summary of the user's repository. 
+            Answer their questions accurately based on the provided context. 
+            If you don't know the answer, say so. Be concise and professional.""",
             llm_config=self.llm_config,
         )
 

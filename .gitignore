@@ -10,7 +10,9 @@ wheels/
 .venv
 .env
 softenv/
-src/credentials/
+credentials/
 workspace/
 src/workspace/
+.cache/
+
 
