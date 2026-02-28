@@ -4,6 +4,17 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
+
+# Bridge Streamlit secrets to environment variables if running in Streamlit Cloud
+try:
+    import streamlit as st
+    if hasattr(st, "secrets"):
+        for key, value in st.secrets.items():
+            if key not in os.environ:
+                os.environ[key] = str(value)
+except ImportError:
+    pass
+
 if os.getenv("GOOGLE_API_KEY"):
     os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 

@@ -22,7 +22,8 @@ def init_firebase():
             if service_account_info.startswith('{') and service_account_info.endswith('}'):
                 import json
                 try:
-                    cred_dict = json.loads(service_account_info)
+                    # use strict=False to handle literal newlines or control chars often found in secrets
+                    cred_dict = json.loads(service_account_info, strict=False)
                     cred = credentials.Certificate(cred_dict)
                     logger.info("Initializing Firebase from JSON string.")
                 except Exception as e:
