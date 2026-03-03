@@ -52,7 +52,13 @@ class Orchestrator:
                 time.sleep(20)
                 diagram_gen = self.factory.create_diagram_generator_agent()
                 types_str = ", ".join(diagram_types)
-                prompt = f"Generate the following specific diagram types for this repo:\n{types_str}\n\nRepository Context:\n{repo_summary}"
+                prompt = (
+                    "You MUST generate a high-quality Mermaid diagram for EACH of the following types:\n"
+                    + "\n".join([f"{i+1}. {t}" for i, t in enumerate(diagram_types)])
+                    + "\n\nRepository Context:\n" + repo_summary
+                    + "\n\nBULLETPROOF RULES: Use ONLY letters, numbers, and spaces in labels. STICK TO ONE-LINE LABELS. "
+                    + "Ensure each diagram is in its own ```mermaid block with a header."
+                )
                 user_proxy.initiate_chat(diagram_gen, message=prompt, silent=True, clear_history=False)
                 all_messages.append({"name": "Diagram_Generator", "content": user_proxy.last_message(diagram_gen)["content"]})
 
@@ -89,8 +95,13 @@ class Orchestrator:
             diagram_gen = self.factory.create_diagram_generator_agent()
             user_proxy = self.factory.create_user_proxy()
             
-            types_str = ", ".join(diagram_types)
-            prompt = f"Generate the following specific diagram types for this repo:\n{types_str}\n\nRepository Context:\n{repo_summary}"
+            prompt = (
+                "You MUST generate a high-quality Mermaid diagram for EACH of the following types:\n"
+                + "\n".join([f"{i+1}. {t}" for i, t in enumerate(diagram_types)])
+                + "\n\nRepository Context:\n" + repo_summary
+                + "\n\nBULLETPROOF RULES: Use ONLY letters, numbers, and spaces in labels. STICK TO ONE-LINE LABELS. "
+                + "Ensure each diagram is in its own ```mermaid block with a header."
+            )
             
             user_proxy.initiate_chat(diagram_gen, message=prompt, silent=True, clear_history=False)
             response = user_proxy.last_message(diagram_gen)["content"]

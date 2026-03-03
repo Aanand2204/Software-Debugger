@@ -97,7 +97,9 @@ def get_analysis_history(limit=10):
         return []
     
     try:
-        docs = db.collection('analyses').order_by('timestamp', direction=firestore.Query.DESCENDING).limit(limit).stream()
+        query = db.collection('analyses')
+        
+        docs = query.order_by('timestamp', direction=firestore.Query.DESCENDING).limit(limit).stream()
         history = []
         for doc in docs:
             data = doc.to_dict()

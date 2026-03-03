@@ -268,3 +268,552 @@
 2026-03-01 01:26:49,521 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-01 01:26:49,523 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
 2026-03-01 01:26:49,590 - SoftwareDebugger - INFO - Analysis for https://github.com/delaford/game saved to Firestore.
+2026-03-01 14:31:03,817 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 14:31:07,475 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-01 14:31:13,937 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:13,940 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:14,964 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:14,965 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:15,990 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:15,990 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:17,101 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:17,105 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:17,107 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 14:31:38,707 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:38,714 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:40,070 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:40,070 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:42,121 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:42,123 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:44,664 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:31:44,667 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:31:44,671 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 14:32:06,336 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:06,339 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:08,126 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:08,126 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:08,325 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:32:08,326 - openai._base_client - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2026-03-01 14:32:10,689 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:10,690 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:10,864 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:32:10,864 - openai._base_client - INFO - Retrying request to /chat/completions in 18.000000 seconds
+2026-03-01 14:32:30,586 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:30,586 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:30,589 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 14:32:51,836 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:51,840 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:52,426 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:52,426 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:52,947 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:32:52,952 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:32:52,985 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:32:52,985 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2026-03-01 14:33:01,690 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:33:01,690 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:33:01,690 - SoftwareDebugger - INFO - Starting Auto-Fix Phase (Direct Implementation)...
+2026-03-01 14:33:21,802 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:33:21,802 - openai._base_client - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2026-03-01 14:33:26,539 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:33:26,539 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:35:55,032 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 14:36:09,893 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:36:09,955 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-01 14:36:09,955 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-01 14:36:38,986 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 14:36:38,986 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:36:42,317 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:36:45,849 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:36:45,921 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:36:47,464 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmp0aid4vd7
+2026-03-01 14:36:47,745 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-01 14:36:54,171 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:36:54,192 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:36:55,850 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:36:55,851 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:36:57,720 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:36:57,726 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:36:57,867 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:36:58,089 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:36:58,161 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:04,720 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 14:37:24,799 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:24,868 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:24,937 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:39,400 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:40,483 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:40,555 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:43,416 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:43,444 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:43,470 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:46,137 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:46,164 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:46,197 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:37:48,314 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 14:38:08,386 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:08,386 - openai._base_client - INFO - Retrying request to /chat/completions in 25.000000 seconds
+2026-03-01 14:38:33,878 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:38:33,878 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:38:33,918 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:34,003 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:34,057 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:37,040 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:37,067 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:37,094 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:40,357 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:40,390 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:40,423 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:38:46,885 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 14:39:06,957 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:07,028 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:07,079 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:11,552 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:11,576 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:11,611 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:13,994 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:14,027 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:14,067 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:18,310 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:18,341 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:18,385 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:22,632 - SoftwareDebugger - INFO - Starting Auto-Fix Phase (Direct Implementation)...
+2026-03-01 14:39:42,920 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:43,979 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:44,070 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:39:55,977 - SoftwareDebugger - INFO - Starting Diagram Generation Phase for: ['Flowchart', 'System Design']...
+2026-03-01 14:40:16,081 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:16,135 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:16,185 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:29,428 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:29,743 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:29,819 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:36,090 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:36,190 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:36,239 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:42,185 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:42,271 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:42,569 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:40:48,919 - SoftwareDebugger - INFO - Analysis for https://github.com/xpd54/Car-race-game saved to Firestore.
+2026-03-01 14:46:32,048 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-01 14:46:32,055 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:33,003 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:34,351 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:34,370 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:34,392 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:37,820 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:38,119 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:46:39,625 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmptgeegkxj
+2026-03-01 14:46:39,833 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-01 14:46:46,532 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-01 14:46:46,532 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-01 14:46:46,532 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-01 14:47:06,585 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:47:06,641 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:47:06,691 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:47:24,026 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-01 14:47:44,160 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:47:44,217 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:47:44,271 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:48:10,412 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-01 14:48:30,590 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:48:30,685 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:48:30,764 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:48:50,107 - SoftwareDebugger - INFO - Analysis for https://github.com/xpd54/Car-race-game saved to Firestore.
+2026-03-01 14:50:17,751 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:50:20,165 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-01 14:50:20,190 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-01 14:50:20,301 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:50:20,650 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:50:20,709 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-01 14:50:27,746 - SoftwareDebugger - INFO - Analysis for https://github.com/xpd54/Car-race-game saved to Firestore.
+2026-03-02 00:25:25,484 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 00:53:20,340 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 00:53:35,296 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 00:53:35,340 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-02 00:53:35,340 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-02 00:53:45,413 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 00:59:22,284 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 00:59:23,900 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 00:59:26,150 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 00:59:31,073 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:05,461 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 01:01:05,466 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:07,128 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:07,284 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:07,439 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:07,584 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:07,741 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:01:07,906 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:03:04,033 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:04:57,024 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:06:27,651 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 01:06:35,769 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:06:35,802 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-02 01:06:35,802 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-02 01:07:33,136 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 01:07:33,141 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:07:34,010 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:07:34,170 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:07:34,346 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:07:46,416 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 01:07:54,762 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:07:54,795 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-02 01:07:54,795 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-02 01:09:59,946 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 01:10:08,731 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:10:08,763 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-02 01:10:08,764 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-02 01:13:23,259 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-02 01:13:31,600 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-02 01:13:31,636 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-02 01:13:31,636 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-03 09:56:54,038 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 09:57:13,892 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 09:57:13,968 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-03 09:57:13,969 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-03 09:57:18,449 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 09:57:19,325 - SoftwareDebugger - ERROR - Error cloning repository: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/d-hackmt C:\Users\aanan\AppData\Local\Temp\tmp5qzp32ic
+  stderr: 'Cloning into 'C:\Users\aanan\AppData\Local\Temp\tmp5qzp32ic'...
+remote: Not Found
+fatal: repository 'https://github.com/d-hackmt/' not found
+'
+2026-03-03 09:57:33,678 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 09:57:33,830 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 09:57:36,601 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpme38d17j
+2026-03-03 09:57:37,324 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-03 09:57:43,736 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 09:57:43,758 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 09:57:43,760 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-03 09:58:04,572 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 09:58:04,576 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 09:58:04,585 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-03 09:58:25,950 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 09:58:25,954 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 09:58:25,956 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-03 09:58:47,562 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 09:58:47,575 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 09:58:48,536 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/Computational-Learning-Assignment saved to Firestore.
+2026-03-03 10:04:11,997 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:04:12,032 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:04:16,994 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpcfiu4ef8
+2026-03-03 10:04:17,589 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-03 10:04:24,376 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:04:24,386 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:04:24,386 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-03 10:04:48,019 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:04:48,023 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:04:48,023 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-03 10:05:11,347 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:05:11,347 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:05:11,347 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-03 10:05:34,203 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:05:34,206 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:05:35,402 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:06:43,477 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:06:44,531 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:06:44,531 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:06:51,880 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:06:54,036 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:06:54,048 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-03 10:06:55,399 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:06:55,399 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:06:55,794 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:07:07,249 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:08,113 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:09,376 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:10,078 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:10,088 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['ER Diagram']...
+2026-03-03 10:07:11,528 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:07:11,531 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:07:11,647 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:07:25,181 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:26,669 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:28,324 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:28,919 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:28,930 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Sequence Diagram']...
+2026-03-03 10:07:30,252 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:07:30,252 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:07:30,444 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:07:39,311 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:40,053 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:41,594 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:42,313 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:07:42,324 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart']...
+2026-03-03 10:07:43,864 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:07:43,864 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:07:44,764 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:12:03,554 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:12:03,561 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:13:16,205 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:13:16,210 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:14:34,957 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:14:39,445 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:14:39,455 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:15:54,978 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:15:54,983 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:16:44,098 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:16:44,102 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:17:31,092 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:17:32,688 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:17:32,699 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart', 'System Design']...
+2026-03-03 10:17:35,669 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:17:35,673 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:17:35,869 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:19:35,532 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:19:35,536 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:20:12,576 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:20:16,692 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpy9n7wcvj
+2026-03-03 10:20:17,013 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-03 10:20:23,895 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:20:23,902 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:20:23,903 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-03 10:20:46,206 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:20:46,206 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:20:46,213 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-03 10:21:08,469 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:21:08,471 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:21:08,473 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-03 10:21:30,197 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:21:30,200 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:21:30,202 - SoftwareDebugger - INFO - Starting Diagram Generation Phase for: ['Flowchart', 'System Design']...
+2026-03-03 10:21:51,357 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:21:51,363 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:21:51,460 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:22:59,602 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:22:59,610 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:23:25,697 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:23:28,400 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:23:28,402 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:23:33,435 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpwbldfc9u
+2026-03-03 10:23:33,667 - SoftwareDebugger - INFO - Starting Parsing Phase...
+2026-03-03 10:23:42,624 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:23:42,630 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:23:42,630 - SoftwareDebugger - INFO - Starting Detection Phase...
+2026-03-03 10:24:05,439 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:24:05,442 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:24:05,443 - SoftwareDebugger - INFO - Starting Patching Phase...
+2026-03-03 10:24:29,582 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:24:29,587 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:24:29,587 - SoftwareDebugger - INFO - Starting Review Phase...
+2026-03-03 10:24:55,487 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:24:55,487 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:24:56,155 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:25:16,260 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:17,006 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:17,013 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-03 10:25:20,330 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:25:20,336 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:25:20,526 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:25:24,993 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:27,063 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:27,455 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:27,463 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design', 'Flowchart']...
+2026-03-03 10:25:28,837 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:25:28,843 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:25:29,285 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:25:51,863 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:52,542 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:25:52,552 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-03 10:25:53,902 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:25:53,907 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:25:54,247 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:25:59,357 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:00,069 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:01,152 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:01,624 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:01,634 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart']...
+2026-03-03 10:26:02,679 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:26:02,680 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:26:02,894 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:26:07,613 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:11,845 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:12,314 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:12,326 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart', 'Use Case Diagram']...
+2026-03-03 10:26:13,717 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:26:13,717 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:26:13,769 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:26:15,342 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:16,069 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:16,080 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Use Case Diagram']...
+2026-03-03 10:26:17,053 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:26:17,053 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:26:17,154 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:26:33,910 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:35,153 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:35,836 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:36,595 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:36,604 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Class Diagram']...
+2026-03-03 10:26:37,694 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:26:37,694 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:26:37,763 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:26:51,042 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:53,814 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:54,864 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:55,387 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:26:55,402 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Sequence Diagram']...
+2026-03-03 10:26:56,674 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:26:56,676 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:26:56,735 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:27:00,977 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:02,609 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:03,287 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:03,785 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:03,792 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Activity Diagram']...
+2026-03-03 10:27:04,676 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:27:04,680 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:27:04,734 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:27:10,771 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:12,094 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:12,828 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:13,398 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:13,402 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['State Diagram']...
+2026-03-03 10:27:14,514 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:27:14,514 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:27:14,581 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:27:31,583 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:32,944 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:33,892 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:34,442 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:27:34,452 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['ER Diagram']...
+2026-03-03 10:27:35,566 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:27:35,566 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:27:35,611 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:31:39,310 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:31:39,324 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:41,066 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:41,226 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:41,370 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:41,556 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:41,706 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:41,875 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:44,358 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:44,523 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:44,676 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:44,703 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:44,725 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:46,142 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:46,724 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:47,488 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:31:47,489 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-03 10:31:48,876 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:31:48,878 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:31:48,945 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:32:25,857 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:32:25,863 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:32:28,023 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:04,636 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:05,964 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:06,788 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:06,802 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design', 'Use Case Diagram']...
+2026-03-03 10:33:08,264 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:33:08,264 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:33:08,347 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:33:16,300 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:18,033 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:18,045 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design', 'Use Case Diagram', 'Class Diagram']...
+2026-03-03 10:33:20,214 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 10:33:20,215 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-03 10:33:20,305 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:33:26,346 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:27,480 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:29,071 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:29,654 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:33:29,665 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Class Diagram']...
+2026-03-03 10:33:29,861 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:33:31,224 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:33:31,358 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:33:44,483 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:34:53,744 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:34:53,752 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:34:53,752 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:34:55,180 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:34:55,371 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:34:55,616 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:34:55,824 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:34:56,013 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:00,229 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:35:00,238 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:00,238 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:02,044 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:43,270 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:44,707 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:45,276 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:45,859 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:35:45,868 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Use Case Diagram']...
+2026-03-03 10:35:46,076 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:35:46,197 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:35:46,343 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:35:55,508 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:36:01,202 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:36:02,372 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:36:02,930 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:36:03,452 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:36:03,465 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-03 10:36:03,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:36:03,947 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:36:04,316 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:36:20,019 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:37:19,807 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:37:19,814 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:37:19,814 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:37:21,611 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:37:21,749 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:37:21,760 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:37:21,760 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:37:23,542 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:40:56,926 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:40:57,752 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:40:58,402 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:40:58,884 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:40:58,895 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Use Case Diagram']...
+2026-03-03 10:41:00,363 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:41:00,488 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:41:00,616 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:41:11,814 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:41:35,727 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:41:36,906 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:41:37,404 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:41:38,463 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:41:38,475 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['System Design']...
+2026-03-03 10:41:38,662 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:41:38,969 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:41:39,090 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:41:46,619 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:42:05,636 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:42:06,780 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:42:07,387 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:42:07,894 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:42:07,903 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart']...
+2026-03-03 10:42:08,176 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:42:08,514 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:42:08,947 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:42:20,360 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:44:48,321 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:44:48,328 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:48,328 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:50,865 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:51,019 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:51,176 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:51,337 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:51,493 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:44:58,576 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-03 10:44:58,581 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:46:46,580 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:46:46,590 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart']...
+2026-03-03 10:46:48,126 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:46:50,248 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:46:50,430 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:00,675 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:47:13,822 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:47:13,832 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart']...
+2026-03-03 10:47:15,556 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:15,780 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:16,302 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:16,389 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-03 10:47:22,887 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-03 10:47:22,896 - SoftwareDebugger - INFO - Starting Independent Diagram Generation for: ['Flowchart']...
+2026-03-03 10:47:24,403 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:25,819 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:25,985 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-03 10:47:26,295 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.

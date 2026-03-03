@@ -26,8 +26,8 @@ class AgentFactory:
 
         self.llm_config = {
             "config_list": config_list,
-            "temperature": 0.2,
-            "cache_seed": None, # Disable caching to ensure fresh results for diagram selection
+            "temperature": 0,
+            "cache_seed": 42, # Enable caching for deterministic diagram generation
         }
 
     def create_code_parser_agent(self):
@@ -68,20 +68,33 @@ class AgentFactory:
     def create_diagram_generator_agent(self):
         return AssistantAgent(
             name="Diagram_Generator",
-            system_message="""You are an expert at software architecture and system design.
-            Based on the provided codebase summary, generate Mermaid diagrams for the requested types.
+            system_message="""You are an expert software architect. Generate Mermaid diagrams based on the codebase summary.
             
-            STRICT RULES for Mermaid Syntax:
-            1. ONLY use standard diagram types: 'graph TD' (for Flowcharts/System Design), 'classDiagram', 'sequenceDiagram', 'stateDiagram-v2', 'erDiagram', 'gantt', 'pie'.
-            2. NEVER use 'architecture' as a type.
-            3. ALWAYS wrap node labels in double quotes. Example: A["Component (v1.0)"]
-            4. Node IDs must be simple alphanumeric strings (e.g., node1, app_core). NEVER use punctuation or spaces in IDs.
-            5. For Flowcharts, always start with 'graph TD'.
+            DIAGRAM TYPE MAPPING (STRICT):
+            - "System Design" or "System Architecture" -> Use 'graph TD' (Flowchart)
+            - "Class Diagram" -> Use 'classDiagram'
+            - "Use Case Diagram" -> Use 'graph TD' or 'sequenceDiagram'
+            - "Sequence Diagram" -> Use 'sequenceDiagram'
+            - "State Diagram" -> Use 'stateDiagram-v2'
+            - "ER Diagram" -> Use 'erDiagram'
             
-            Deliverables:
-            Provide a separate ```mermaid block for EVERY specific diagram type requested.
-            Label each block with a clear Markdown header (e.g. ### Class Diagram).
-            Be accurate and technical.""",
+            STRICT RULES:
+            1. Provide a separate ```mermaid block for EVERY specific diagram type requested.
+            2. ALWAYS include a Markdown header (e.g. ### Class Diagram) before each block.
+            3. Node IDs must be alphanumeric; NEVER use punctuation or spaces in IDs.
+            4. Wrap ALL node labels and text in double quotes: A["Component Name"].
+            5. BULLETPROOF LABEL RULES (EXTREME): 
+               - Labels must contain ONLY letters (A-Z, a-z), numbers (0-9), and single spaces.
+               - STRIP ALL PUNCTUATION: No periods (.), commas (,), underscores (_), hyphens (-), slashes (/), or colons (:).
+               - DO NOT USE parentheses ( ) or brackets [ ] inside double-quoted labels.
+               - NO MULTI-LINE LABELS: Labels must be a single string without line breaks.
+            6. For "Use Case Diagram", ALWAYS use 'graph LR'. 
+               - Represent Actors as simple nodes (e.g. UserNode["User Actor"]).
+               - Represent Use Cases as separate nodes (e.g. Case1["Login Process"]).
+            7. For "System Design", ALWAYS use 'graph TD'.
+            8. If only ONE diagram type is requested, generate it immediately without asking for clarification.
+            9. Do NOT use the 'architecture' keyword as a diagram type.
+            10. Ensure diagrams are valid for Mermaid v10.9.5. No experimental features.""",
             llm_config=self.llm_config,
         )
 

@@ -8,10 +8,14 @@ load_dotenv()
 # Bridge Streamlit secrets to environment variables if running in Streamlit Cloud
 try:
     import streamlit as st
-    if hasattr(st, "secrets"):
-        for key, value in st.secrets.items():
-            if key not in os.environ:
-                os.environ[key] = str(value)
+    try:
+        if hasattr(st, "secrets"):
+            for key, value in st.secrets.items():
+                if key not in os.environ:
+                    os.environ[key] = str(value)
+    except Exception:
+        # st.secrets may raise an error if secrets.toml is missing
+        pass
 except ImportError:
     pass
 

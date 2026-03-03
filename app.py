@@ -18,7 +18,8 @@ db = init_firebase()
 
 st.set_page_config(page_title="Autonomous Software Debugger", layout="wide")
 
-st.title("🚀 Autonomous Software Debugging Assistant")
+st.title("🚀 Autonomous Software Debugger")
+st.markdown("**Welcome to the Codebase Analyzer!** 📂")
 st.markdown("""
 Upload a GitHub repository URL, and our multi-agent system will:
 1. **Analyze** the codebase 📂
@@ -34,28 +35,63 @@ with st.sidebar:
     process_button = st.button("Analyze Codebase")
 
 # Function to render Mermaid diagrams
-def render_mermaid(code):
-    """Simple wrapper to render Mermaid code in Streamlit with dark mode support."""
+def render_mermaid(code, name="diagram"):
+    """Simple wrapper to render Mermaid code in Streamlit with high-res PNG export."""
+    # Sanitize name for filename
+    safe_name = "".join([c if c.isalnum() else "_" for c in name]).lower()
+    
     components_html = f"""
-    <div class="mermaid">
-        {code}
+    <div style="position: relative; margin-bottom: 2rem; background: #1e1e1e; border-radius: 8px; padding: 1.5rem; border: 1px solid #333;">
+        <div style="position: absolute; top: 10px; right: 10px; z-index: 1000; display: flex; gap: 8px; align-items: center;">
+            <select id="theme-select" style="
+                background: #2d2d2d;
+                color: #fff;
+                border: 1px solid #444;
+                border-radius: 4px;
+                padding: 4px 8px;
+                font-size: 0.8rem;
+                cursor: pointer;
+            ">
+                <option value="dark">🌙 Dark Theme</option>
+                <option value="light">☀️ Light Theme</option>
+            </select>
+            <button id="download-btn" style="
+                background: #BB86FC;
+                color: #000;
+                border: none;
+                padding: 5px 12px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 0.8rem;
+                font-weight: bold;
+                transition: all 0.2s;
+            " onmouseover="this.style.background='#9965f4'" onmouseout="this.style.background='#BB86FC'">
+                📥 Save as PNG
+            </button>
+        </div>
+        <div class="mermaid" id="mermaid-container">
+            {code}
+        </div>
     </div>
     <style>
         .mermaid svg {{
             font-family: 'Inter', sans-serif !important;
+            max-width: 100% !important;
+            height: auto !important;
         }}
         /* Ensure arrows and lines are visible in dark backgrounds */
-        .mermaid .edgePath .path {{
+        .mermaid .edgePath .path, .mermaid .edge-thickness-normal, .mermaid .edge {{ 
             stroke: #ffffff !important;
             stroke-width: 2px !important;
         }}
-        .mermaid .marker {{
+        .mermaid .marker, .mermaid marker path, .mermaid .arrowheadPath {{
             fill: #ffffff !important;
             stroke: #ffffff !important;
         }}
     </style>
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.5/dist/mermaid.esm.min.mjs';
+        
         mermaid.initialize({{ 
             startOnLoad: true, 
             theme: 'dark',
@@ -68,9 +104,89 @@ def render_mermaid(code):
                 tertiaryColor: '#3700B3'
             }}
         }});
+
+        document.getElementById('download-btn').addEventListener('click', function() {{
+            const svg = document.querySelector('#mermaid-container svg');
+            if (!svg) return;
+
+            const theme = document.getElementById('theme-select').value;
+            const isDark = theme === 'dark';
+
+            // Clone the SVG to modify it for export
+            const svgClone = svg.cloneNode(true);
+            
+            // Inline necessary styles for the export
+            const styleElement = document.createElement('style');
+            const bgColor = isDark ? '#1e1e1e' : '#ffffff';
+            const fgColor = isDark ? '#ffffff' : '#000000';
+            const lineColor = isDark ? '#ffffff' : '#333333';
+            
+            styleElement.textContent = `
+                svg {{ background-color: ${{bgColor}}; font-family: 'Inter', sans-serif; }}
+                /* Lines and Arrows */
+                .edgePath .path, .edge-thickness-normal, .edge {{ 
+                    stroke: ${{lineColor}} !important; 
+                    stroke-width: 2px !important; 
+                    opacity: 1 !important;
+                }}
+                .marker, marker path, .arrowheadPath {{ 
+                    fill: ${{lineColor}} !important; 
+                    stroke: ${{lineColor}} !important; 
+                }}
+                /* Text and Labels */
+                text, .label, .nodeLabel, .edgeLabel, .markdown-node-label, .label div, .label span {{ 
+                    fill: ${{fgColor}} !important; 
+                    color: ${{fgColor}} !important; 
+                    white-space: nowrap !important;
+                }}
+                /* Nodes/Shapes */
+                .node rect, .node circle, .node polygon, .node path, .node .label-container {{ 
+                    stroke: ${{lineColor}} !important; 
+                    fill: ${{isDark ? '#2d2d2d' : '#f9f9f9'}} !important; 
+                    stroke-width: 1.5px !important;
+                }}
+            `;
+            svgClone.insertBefore(styleElement, svgClone.firstChild);
+
+            const bbox = svg.getBBox();
+            const padding = 30;
+            const scale = 3; // High-res scale
+
+            // Set explicit dimensions and viewBox on the clone
+            svgClone.setAttribute('width', bbox.width + padding * 2);
+            svgClone.setAttribute('height', bbox.height + padding * 2);
+            svgClone.setAttribute('viewBox', `${{bbox.x - padding}} ${{bbox.y - padding}} ${{bbox.width + padding * 2}} ${{bbox.height + padding * 2}}`);
+
+            const svgData = new XMLSerializer().serializeToString(svgClone);
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            const img = new Image();
+            img.onload = function() {{
+                canvas.width = (bbox.width + padding * 2) * scale;
+                canvas.height = (bbox.height + padding * 2) * scale;
+                
+                // Fill background
+                ctx.fillStyle = bgColor;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.scale(scale, scale);
+                ctx.drawImage(img, 0, 0);
+                
+                const pngFile = canvas.toDataURL("image/png");
+                const downloadLink = document.createElement("a");
+                downloadLink.download = `{safe_name}_${{theme}}.png`;
+                downloadLink.href = pngFile;
+                downloadLink.click();
+            }};
+            img.onerror = function() {{
+                console.error("SVG Image loading failed");
+            }};
+            img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+        }});
     </script>
     """
-    st.components.v1.html(components_html, height=500, scrolling=True)
+    st.components.v1.html(components_html, height=600, scrolling=True)
 
 # Initialize session state for persistent data
 if "messages" not in st.session_state:
@@ -84,10 +200,10 @@ if "analysis_results" not in st.session_state:
 DIAG_OPTIONS = ["Flowchart", "System Design", "Use Case Diagram", "Class Diagram", "Sequence Diagram", "Activity Diagram", "State Diagram", "ER Diagram"]
 
 if "diag_selection" not in st.session_state:
-    st.session_state.diag_selection = ["Flowchart", "System Design"]
+    st.session_state.diag_selection = []
 elif not isinstance(st.session_state.diag_selection, list):
     # Fix for any lingering non-list values from previous versions
-    st.session_state.diag_selection = ["Flowchart", "System Design"]
+    st.session_state.diag_selection = []
 else:
     # Filter out any non-existent options
     st.session_state.diag_selection = [opt for opt in st.session_state.diag_selection if opt in DIAG_OPTIONS]
@@ -184,7 +300,7 @@ with tab3:
         help="Select multiple diagrams. These will be generated using the LLM."
     )
     
-    if st.button("🎨 Generate Selected Diagrams"):
+    if st.button("🔄 Regenerate Selected Diagrams"):
         if st.session_state.repo_summary:
             if st.session_state.diag_selection:
                 with st.spinner("Generating diagrams... (this may take a minute)"):
@@ -221,7 +337,7 @@ with tab3:
                     for idx, block in enumerate(mermaid_blocks):
                         label = headers[idx] if idx < len(headers) else f"Diagram {idx+1}"
                         st.subheader(f"🖼️ {label}")
-                        render_mermaid(block)
+                        render_mermaid(block, name=label)
                 else:
                     st.markdown(content)
     
@@ -252,7 +368,7 @@ with tab3:
                                     for idx, block in enumerate(mermaid_blocks):
                                         label = headers[idx] if idx < len(headers) else f"Diagram {idx+1}"
                                         st.subheader(f"🖼️ {label}")
-                                        render_mermaid(block)
+                                        render_mermaid(block, name=label)
                                 else:
                                     st.markdown(content)
                         else:
