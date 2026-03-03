@@ -883,3 +883,7 @@ fatal: unable to access 'https://github.com/ironhack-labs/lab-canvas-race-car/':
 2026-03-04 00:45:39,513 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-03-04 00:45:40,021 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-03-04 00:45:51,384 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.
+2026-03-04 01:04:45,830 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-04 01:04:56,389 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 01:04:56,444 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-04 01:04:56,444 - SoftwareDebugger - INFO - Firebase initialized successfully.
