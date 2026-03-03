@@ -817,3 +817,69 @@ fatal: repository 'https://github.com/d-hackmt/' not found
 2026-03-03 10:47:25,819 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-03-03 10:47:25,985 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-03-03 10:47:26,295 - SoftwareDebugger - INFO - Analysis for https://github.com/d-hackmt/timetable-generator-w-genetic-algorithm saved to Firestore.
+2026-03-04 00:21:27,513 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-04 00:21:42,472 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:21:42,530 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-04 00:21:42,530 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-04 00:21:57,192 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-04 00:21:57,195 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:22:34,231 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:22:34,463 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:22:37,524 - SoftwareDebugger - ERROR - Error cloning repository: Cmd('git') failed due to: exit code(128)
+  cmdline: git clone -v -- https://github.com/ironhack-labs/lab-canvas-race-car C:\Users\aanan\AppData\Local\Temp\tmpif2o6lbu
+  stderr: 'Cloning into 'C:\Users\aanan\AppData\Local\Temp\tmpif2o6lbu'...
+remote: Internal Server Error
+fatal: unable to access 'https://github.com/ironhack-labs/lab-canvas-race-car/': The requested URL returned error: 500
+'
+2026-03-04 00:22:54,648 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:22:54,878 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:23:16,363 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpdnsrz_rw
+2026-03-04 00:23:19,245 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 00:23:19,252 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-04 00:23:24,298 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 00:23:24,298 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-04 00:23:29,739 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 00:23:29,743 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-04 00:23:34,169 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 00:23:34,175 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-04 00:23:34,308 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.
+2026-03-04 00:23:44,992 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:23:45,167 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:25:13,838 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:25:15,217 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:25:17,425 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:25:17,585 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:25:17,725 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:25:27,318 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.
+2026-03-04 00:26:50,009 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:26:50,210 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:27:42,627 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:27:42,981 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:27:43,152 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:27:43,396 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:27:43,575 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:28:20,499 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:28:22,737 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:28:22,871 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:28:23,028 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:28:23,109 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.
+2026-03-04 00:28:30,777 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:28:32,607 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:28:35,794 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:28:36,756 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:28:38,970 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:28:39,137 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:28:39,314 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:28:46,928 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.
+2026-03-04 00:31:08,654 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:31:08,908 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:31:10,657 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:31:10,880 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:45:30,750 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:45:33,274 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-04 00:45:36,749 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 00:45:36,750 - autogen.oai.client - WARNING - Model llama-3.3-70b-versatile is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-04 00:45:38,974 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:45:39,513 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:45:40,021 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-04 00:45:51,384 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.

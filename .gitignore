@@ -16,3 +16,5 @@ src/workspace/
 .cache/
 
 
+vscode-extension/
+extension_api.py

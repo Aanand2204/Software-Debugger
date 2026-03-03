@@ -33,21 +33,31 @@ class AgentFactory:
     def create_code_parser_agent(self):
         return AssistantAgent(
             name="Code_Parser",
-            system_message="Analyze the codebase structure and identify key modules.",
+            system_message="Analyze the local workspace structure and identify key modules. You are part of a VS Code extension.",
             llm_config=self.llm_config,
         )
 
     def create_bug_detection_agent(self):
         return AssistantAgent(
             name="Bug_Detection",
-            system_message="Identify potential logical errors or security vulnerabilities.",
+            system_message="""Identify potential logical errors or security vulnerabilities. 
+            FORMATTING RULES:
+            1. Use '###' for main finding headers.
+            2. Use regular text for descriptions. 
+            3. Use triple backticks with a language (e.g. ```python) ONLY for code snippets.
+            4. NEVER wrap headings or descriptions in triple backticks.""",
             llm_config=self.llm_config,
         )
 
     def create_patch_generator_agent(self):
         return AssistantAgent(
             name="Patch_Generator",
-            system_message="Suggest concrete code patches or refactorings to fix identified bugs.",
+            system_message="""Suggest concrete code patches or refactorings to fix identified bugs. 
+            FORMATTING RULES:
+            1. Use '###' for main patch headers.
+            2. Use regular text for explanations. 
+            3. ALWAYS provide code fixes inside triple backticks with the correct language (e.g. ```python).
+            4. NEVER wrap headings, file paths, or reasoning in triple backticks. Keep them as plain text.""",
             llm_config=self.llm_config,
         )
 
@@ -61,7 +71,11 @@ class AgentFactory:
     def create_reviewer_agent(self):
         return AssistantAgent(
             name="Reviewer",
-            system_message="Review analysis, patches, and tests. Provide final approval.",
+            system_message="""Review analysis, patches, and tests. Provide final approval.
+            FORMATTING RULES:
+            1. Be professional and concise. 
+            2. Use Markdown headers for different categories of feedback.
+            3. Triple backticks are ONLY for code snippets. Do not use them for emphasis or framing text.""",
             llm_config=self.llm_config,
         )
 
@@ -71,38 +85,40 @@ class AgentFactory:
             system_message="""You are an expert software architect. Generate Mermaid diagrams based on the codebase summary.
             
             DIAGRAM TYPE MAPPING (STRICT):
-            - "System Design" or "System Architecture" -> Use 'graph TD' (Flowchart)
+            - "System Design" -> Use 'graph TD' (Flowchart)
             - "Class Diagram" -> Use 'classDiagram'
-            - "Use Case Diagram" -> Use 'graph TD' or 'sequenceDiagram'
-            - "Sequence Diagram" -> Use 'sequenceDiagram'
-            - "State Diagram" -> Use 'stateDiagram-v2'
-            - "ER Diagram" -> Use 'erDiagram'
+            - "Use Case Diagram" -> Use 'graph LR' (Flowchart)
             
-            STRICT RULES:
+            STRICT SYNTAX RULES (BULLETPROOF):
             1. Provide a separate ```mermaid block for EVERY specific diagram type requested.
             2. ALWAYS include a Markdown header (e.g. ### Class Diagram) before each block.
-            3. Node IDs must be alphanumeric; NEVER use punctuation or spaces in IDs.
-            4. Wrap ALL node labels and text in double quotes: A["Component Name"].
-            5. BULLETPROOF LABEL RULES (EXTREME): 
-               - Labels must contain ONLY letters (A-Z, a-z), numbers (0-9), and single spaces.
-               - STRIP ALL PUNCTUATION: No periods (.), commas (,), underscores (_), hyphens (-), slashes (/), or colons (:).
-               - DO NOT USE parentheses ( ) or brackets [ ] inside double-quoted labels.
-               - NO MULTI-LINE LABELS: Labels must be a single string without line breaks.
-            6. For "Use Case Diagram", ALWAYS use 'graph LR'. 
-               - Represent Actors as simple nodes (e.g. UserNode["User Actor"]).
-               - Represent Use Cases as separate nodes (e.g. Case1["Login Process"]).
-            7. For "System Design", ALWAYS use 'graph TD'.
-            8. If only ONE diagram type is requested, generate it immediately without asking for clarification.
-            9. Do NOT use the 'architecture' keyword as a diagram type.
-            10. Ensure diagrams are valid for Mermaid v10.9.5. No experimental features.""",
+            
+            3. FOR ALL DIAGRAMS:
+               - Node IDs must be SHORT, ALPHANUMERIC (e.g. A, B, C, Node1, Node2).
+               - DO NOT use spaces, hyphens, or punctuation in IDs.
+               - ALWAYS wrap labels in double quotes: NodeID["Label Text"].
+               - Labels must contain ONLY A-Z, a-z, 0-9, and spaces.
+               - CRITICAL: NO PARENTHESES () OR BRACKETS [] ALLOWED IN LABELS, EVEN IN QUOTES.
+            
+            4. FOR Flowcharts (System Design / Use Case):
+               - Use standard arrow: A["Auth"] --> B["DB"].
+               - NEVER use single hyphens: - (invalid for connections).
+               - Use ONLY --> for connections.
+            
+            5. FOR 'classDiagram':
+               - Format: class ClassName { +type memberName }
+               - Strictly use simple relationships: ClassA <|-- ClassB (Inheritance) or ClassA *-- ClassB (Composition).
+            
+            6. NO MULTI-LINE LABELS: Labels must be a single string without line breaks.
+            7. Ensure diagrams are valid for Mermaid v10.9.5.""",
             llm_config=self.llm_config,
         )
 
     def create_repo_chat_agent(self):
         return AssistantAgent(
             name="Repo_Chat_Agent",
-            system_message="""You are a helpful software engineering assistant. 
-            You have access to a summary of the user's repository. 
+            system_message="""You are a helpful software engineering assistant integrated into VS Code.
+            You have access to a summary of the user's local workspace. 
             Answer their questions accurately based on the provided context. 
             If you don't know the answer, say so. Be concise and professional.""",
             llm_config=self.llm_config,
