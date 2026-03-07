@@ -887,3 +887,148 @@ fatal: unable to access 'https://github.com/ironhack-labs/lab-canvas-race-car/':
 2026-03-04 01:04:56,389 - SoftwareDebugger - INFO - google-generativeai is available.
 2026-03-04 01:04:56,444 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
 2026-03-04 01:04:56,444 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-05 13:26:50,528 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 13:27:13,624 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 13:27:13,732 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-05 13:27:13,733 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-05 13:27:50,879 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 13:27:51,094 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 13:27:56,066 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpviup44i6
+2026-03-05 13:28:00,207 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 13:28:00,266 - autogen.oai.client - WARNING - Model llama-3.1-8b-instant is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-05 13:29:43,067 - SoftwareDebugger - INFO - Analysis for https://github.com/RedHat-Israel/ROSE saved to Firestore.
+2026-03-05 13:30:35,224 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:45:06,541 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 14:45:29,762 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:45:29,843 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-05 14:45:29,843 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-05 14:45:53,000 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:45:53,265 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:45:55,055 - SoftwareDebugger - INFO - Repository cloned successfully to C:\Users\aanan\AppData\Local\Temp\tmpbrqx4xwa
+2026-03-05 14:45:58,350 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 14:45:58,378 - autogen.oai.client - WARNING - Model llama-3.1-8b-instant is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-05 14:47:11,003 - SoftwareDebugger - INFO - Analysis for https://github.com/DreyAnd/maian-cart-rce saved to Firestore.
+2026-03-05 14:53:07,048 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 14:53:07,062 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:53:13,999 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:53:18,429 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:53:18,759 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:53:52,564 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 14:53:52,570 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:54:29,753 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:57:13,903 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 14:57:13,906 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:57:35,990 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:57:38,589 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-05 14:57:38,589 - autogen.oai.client - WARNING - Model llama-3.1-8b-instant is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-05 14:59:22,604 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:59:26,609 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:59:45,144 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 14:59:46,157 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:01:23,353 - SoftwareDebugger - INFO - Analysis for D:\test saved to Firestore.
+2026-03-05 15:01:44,087 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:02:39,560 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:05,087 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:05,326 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:06,448 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:42,720 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:42,903 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:45,517 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:45,660 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:48,903 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:49,053 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:03:51,126 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:04:44,688 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:04:49,194 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:04:49,344 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:06:55,012 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:06:55,014 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:07:08,481 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:07:08,826 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:08:25,139 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:08:25,145 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:09:02,666 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:38:32,545 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:39:00,838 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:39:00,975 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-05 15:39:00,976 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-05 15:39:49,341 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:39:50,614 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:40:00,811 - SoftwareDebugger - INFO - Analysis for D:/test saved to Firestore.
+2026-03-05 15:40:11,831 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:45:27,073 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:46:42,327 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:16,164 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:49:16,667 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:16,669 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:16,669 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:16,669 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:16,669 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:19,627 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:20,015 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:20,398 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:20,787 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:21,192 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:21,578 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:21,990 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:22,396 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:22,741 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:23,098 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:23,521 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:23,910 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:25,981 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:41,278 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:49:41,769 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:51:20,408 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:51:20,412 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:51:20,412 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:51:22,174 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:51:22,358 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:51:40,456 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:51:40,462 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:52:49,386 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:57:23,225 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-05 15:57:23,239 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:57:50,644 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:59:27,016 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:59:33,205 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-05 15:59:54,905 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:49:58,953 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-08 00:51:27,049 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:51:27,132 - SoftwareDebugger - INFO - Initializing Firebase from file: D:\Software_Debugger\credentials\firebase.json
+2026-03-08 00:51:27,132 - SoftwareDebugger - INFO - Firebase initialized successfully.
+2026-03-08 00:51:44,906 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:51:45,294 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:51:55,393 - SoftwareDebugger - INFO - Analysis for D:/test saved to Firestore.
+2026-03-08 00:52:07,991 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:54:19,264 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:54:48,332 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:55:19,379 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 00:55:27,400 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:07:58,517 - SoftwareDebugger - INFO - Configuration validated successfully.
+2026-03-08 02:07:58,542 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:08:02,114 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 02:08:02,132 - autogen.oai.client - WARNING - Model llama-3.1-8b-instant is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-08 02:09:14,642 - SoftwareDebugger - INFO - Analysis for D:\Pipecat saved to Firestore.
+2026-03-08 02:11:47,906 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:12:20,918 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:12:52,143 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:12:53,068 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:12:53,462 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:12:54,374 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:12:54,978 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:13:57,680 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:15:16,360 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:18:42,882 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:18:43,186 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:18:44,327 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:20:45,319 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:20:45,562 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:24:45,980 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-08 02:24:45,984 - autogen.oai.client - WARNING - Model llama-3.1-8b-instant is not found. The cost will be 0. In your config_list, add field {"price" : [prompt_price_per_1k, completion_token_price_per_1k]} for customized pricing.
+2026-03-08 02:25:43,416 - SoftwareDebugger - INFO - Analysis for D:\Hackathon saved to Firestore.
+2026-03-08 02:25:51,236 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:27:27,275 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:27:30,030 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:28:43,767 - SoftwareDebugger - INFO - google-generativeai is available.
+2026-03-08 02:28:44,622 - SoftwareDebugger - INFO - google-generativeai is available.

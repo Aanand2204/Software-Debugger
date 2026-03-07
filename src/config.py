@@ -45,7 +45,8 @@ class Config:
     
     # AutoGen configuration
     MODEL = "gemini-2.5-flash" # Default Gemini model
-    GROQ_MODEL = "llama-3.3-70b-versatile" # Recommended Groq model
+    GROQ_MODEL = "llama-3.3-70b-versatile" # Recommended Groq model (Heavy)
+    GROQ_MODEL_LIGHT = "llama-3.1-8b-instant" # Fast/Light model for high-RPM tasks
     
     @classmethod
     def get_groq_keys(cls):

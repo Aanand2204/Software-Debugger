@@ -7,39 +7,58 @@ class AgentFactory:
         self.current_groq_index = 0
         self.refresh_config()
 
-    def refresh_config(self):
-        """Builds/Refreshes the llm_config with current key prioritization."""
-        config_list = []
-        
-        # Add Groq keys starting from the current index
+    def _build_config(self, model_name, gemini_first=False):
+        """Helper to build a config list with optional Gemini prioritization."""
+        groq_configs = []
         if self.groq_keys:
-            # We cycle the list so the 'current' index is always tried first by AutoGen
             rotated_keys = self.groq_keys[self.current_groq_index:] + self.groq_keys[:self.current_groq_index]
             for key in rotated_keys:
-                config_list.append({
-                    "model": Config.GROQ_MODEL,
+                groq_configs.append({
+                    "model": model_name,
                     "api_key": key,
                     "base_url": "https://api.groq.com/openai/v1",
                     "api_type": "openai",
-                    "max_retries": 0  # Force immediate exception to trigger orchestrator rotation
+                    "max_retries": 0
                 })
         
-        # Add Gemini key (Final Fallback)
+        gemini_configs = []
         if Config.GOOGLE_API_KEY:
-            config_list.append({
+            gemini_configs.append({
                 "model": Config.MODEL,
                 "api_key": Config.GOOGLE_API_KEY,
                 "api_type": "google",
                 "max_retries": 0
             })
 
-        self.llm_config = {
-            "config_list": config_list,
+        return gemini_configs + groq_configs if gemini_first else groq_configs + gemini_configs
+
+    def refresh_config(self):
+        """Builds/Refreshes both heavy and light llm_configs."""
+        common_params = {
             "temperature": 0,
             "cache_seed": 42,
             "timeout": 60,
             "max_retries": 0
         }
+        
+        # Heavy Analysis (Detection, Patching, Review) -> Gemini First (Better Quota)
+        self.llm_config = {
+            "config_list": self._build_config(Config.GROQ_MODEL, gemini_first=True),
+            **common_params
+        }
+        
+        # Structural/Fast (Parsing, Diagrams) -> Groq First (Better Speed)
+        self.llm_config_light = {
+            "config_list": self._build_config(Config.GROQ_MODEL_LIGHT, gemini_first=False),
+            **common_params
+        }
+
+    @staticmethod
+    def truncate_context(text, max_chars=4000):
+        """Truncates massive context strings to prevent token overflow."""
+        if not text: return ""
+        if len(text) <= max_chars: return text
+        return text[:max_chars] + "\n... [Context truncated for quota safety] ..."
 
     def get_masked_key(self):
         """Returns the current key with masking (e.g., gsk_...1234)."""
@@ -62,7 +81,7 @@ class AgentFactory:
             Identify key modules, entry points, and potential configuration mismatches. 
             Highlight if any expected directories (like 'src' or 'tests') are missing.
             BE CONCISE. Use Markdown headers for organization.""",
-            llm_config=self.llm_config,
+            llm_config=self.llm_config_light,
         )
 
     def create_bug_detection_agent(self):
@@ -82,10 +101,11 @@ class AgentFactory:
             name="Patch_Generator",
             system_message="""Suggest concrete code patches or refactorings to fix detected bugs. 
             Provide exactly one primary fix per issue unless alternatives are critical.
-            FORMATTING RULES:
+            STRICT RULES:
             1. Use '###' for header.
-            2. ALWAYS provide code fixes inside triple backticks (```python).
-            3. Keep explanations brief and focused on the change.""",
+            2. ALWAYS specify the target file path using the format: #### [FILE] path/to/file.py
+            3. ALWAYS provide code fixes inside triple backticks (```python).
+            4. Keep explanations brief and focused on the change.""",
             llm_config=self.llm_config,
         )
 
@@ -102,45 +122,48 @@ class AgentFactory:
             llm_config=self.llm_config,
         )
 
+    def create_patch_applier_agent(self):
+        return AssistantAgent(
+            name="Patch_Applier",
+            system_message="""You are a precision code merging tool. 
+            Your task is to take the ORIGINAL file content and a PATCH suggestion, and return the COMPLETE, UPDATED file content.
+            STRICT RULES:
+            1. ONLY return the updated code inside triple backticks (```python).
+            2. DO NOT include any explanations, headers, or commentary.
+            3. Preserve the original indentation and style exactly.
+            4. Ensure the resulting code is syntactically correct and complete.""",
+            llm_config=self.llm_config,
+        )
+
     def create_diagram_generator_agent(self):
         return AssistantAgent(
             name="Diagram_Generator",
-            system_message="""You are an expert software architect. Generate Mermaid diagrams based on the codebase summary.
-            
-            DIAGRAM TYPE MAPPING (STRICT):
-            - "System Design" -> Use 'graph TD' (Flowchart)
-            - "Class Diagram" -> Use 'classDiagram'
-            - "Use Case Diagram" -> Use 'graph LR' (Flowchart)
-            - "Sequence Diagram" -> Use 'sequenceDiagram'
-            - "Activity Diagram" -> Use 'graph TD' (Flowchart)
-            - "State Diagram" -> Use 'stateDiagram-v2'
-            - "ER Diagram" -> Use 'erDiagram'
-            
-            STRICT SYNTAX RULES (BULLETPROOF):
-            1. Provide a separate ```mermaid block for EVERY specific diagram type requested.
-            2. ALWAYS include a Markdown header (e.g. ### Class Diagram) before each block.
-            
-            3. FOR ALL DIAGRAMS:
-               - Node IDs must be SHORT, ALPHANUMERIC (e.g. A, B, C, Node1, Node2).
-               - DO NOT use spaces, hyphens, or punctuation in IDs.
-               - ALWAYS wrap labels in double quotes: NodeID["Label Text"].
-               - Labels must contain ONLY A-Z, a-z, 0-9, and spaces.
-               - CRITICAL: NO PARENTHESES () OR BRACKETS [] ALLOWED IN LABELS.
-            
-            4. FOR 'sequenceDiagram':
-               - Use: ParticipantA->>ParticipantB: "Message Text"
-               - NEVER use parentheses in messages.
-            
-            5. FOR 'erDiagram':
-               - Use simple format: ENTITY1 ||--o{ ENTITY2 : "relation"
-               - Keep attributes simple: ENTITY1 { string name }
-            
-            6. FOR 'stateDiagram-v2':
-               - Use: [*] --> State1
-               - State1 --> State2: "Event"
-            
-            7. NO MULTI-LINE LABELS: Labels must be a single string without line breaks.
-            8. Ensure diagrams are valid for Mermaid v10.9.5.""",
+            system_message="""You are a world-class Systems Architect. 
+            Define the system architecture in a structured JSON format for a professional blueprint.
+
+            OUTPUT FORMAT (Strictly JSON inside a ```json block):
+            {
+              "nodes": [
+                {"id": "user", "label": "User Interface", "layer": 0},
+                {"id": "api", "label": "Flask API Gateway", "layer": 1},
+                {"id": "logic", "label": "LangChain Logic", "layer": 2},
+                {"id": "db", "label": "Pinecone DB", "layer": 3}
+              ],
+              "edges": [
+                {"from": "user", "to": "api", "label": "request"},
+                {"from": "api", "to": "logic", "label": "process"},
+                {"from": "logic", "to": "db", "label": "query"}
+              ]
+            }
+
+            STRICT RULES:
+            1. ONLY provide the JSON block. 
+            2. Use concise, professional labels. 
+            3. MANDATORY: Assign each node a 'layer' index (0=Interaction, 1=Gateway/API, 2=Logic/Intelligence, 3=Data/Storage).
+            4. For 'Master Flow Chart', include all major components and their primary interactions across the entire system.
+            5. Do not attempt coordinate math; the rendering engine will handle layout.
+            6. Header (### Diagram Type) MUST be outside the code block.
+""",
             llm_config=self.llm_config,
         )
 
