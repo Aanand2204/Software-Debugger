@@ -36,7 +36,7 @@ class AgentFactory:
         """Builds/Refreshes both heavy and light llm_configs."""
         common_params = {
             "temperature": 0,
-            "cache_seed": 42,
+            "cache_seed": None,
             "timeout": 60,
             "max_retries": 0
         }
@@ -105,7 +105,13 @@ class AgentFactory:
             1. Use '###' for header.
             2. ALWAYS specify the target file path using the format: #### [FILE] path/to/file.py
             3. ALWAYS provide code fixes inside triple backticks (```python).
-            4. Keep explanations brief and focused on the change.""",
+            4. Keep explanations brief and focused on the change.
+            5. 🔥 MANDATORY ANTI-HALLUCINATION: NEVER introduce new imports.
+            6. ONLY use standard libraries OR modules explicitly listed in the 'Workspace File List'.
+            7. ⚠️ NUCLEAR GUARD ACTIVE: Any hallucinated imports (e.g. 'ai_copilot', 'file_processor', 'copilot_utils') will be AUTOMATICALLY STRIPPED from your code, likely breaking it. Do not attempt to use them.
+            8. If a module is not in the list, IT DOES NOT EXIST. Do not use it. 
+            9. NEVER use helper classes from non-existent modules like 'AICopilot'. 
+            """,
             llm_config=self.llm_config,
         )
 
@@ -131,7 +137,11 @@ class AgentFactory:
             1. ONLY return the updated code inside triple backticks (```python).
             2. DO NOT include any explanations, headers, or commentary.
             3. Preserve the original indentation and style exactly.
-            4. Ensure the resulting code is syntactically correct and complete.""",
+            4. Ensure the resulting code is syntactically correct and complete.
+            5. 🔥 MANDATORY ANTI-HALLUCINATION: If the patch suggestion introduces a new import that wasn't in the original code AND isn't a standard library, STRIP IT OUT IMMEDIATELY.
+            6. Do not 'guess' helper modules. If it's not in the original code, it shouldn't be added.
+            7. 🛑 STOP: Modules like 'ai_copilot' are forbidden. Do not include them even if the user or previous agent mentioned them.
+            """,
             llm_config=self.llm_config,
         )
 
@@ -144,23 +154,23 @@ class AgentFactory:
             OUTPUT FORMAT (Strictly JSON inside a ```json block):
             {
               "nodes": [
-                {"id": "user", "label": "User Interface", "layer": 0},
-                {"id": "api", "label": "Flask API Gateway", "layer": 1},
-                {"id": "logic", "label": "LangChain Logic", "layer": 2},
-                {"id": "db", "label": "Pinecone DB", "layer": 3}
+                {"id": "node1", "label": "Example Client", "layer": 0},
+                {"id": "node2", "label": "Example Service", "layer": 1},
+                {"id": "node3", "label": "Example Logic", "layer": 2},
+                {"id": "node4", "label": "Example DB", "layer": 3}
               ],
               "edges": [
-                {"from": "user", "to": "api", "label": "request"},
-                {"from": "api", "to": "logic", "label": "process"},
-                {"from": "logic", "to": "db", "label": "query"}
+                {"from": "node1", "to": "node2", "label": "action"},
+                {"from": "node2", "to": "node3", "label": "flow"},
+                {"from": "node3", "to": "node4", "label": "storage"}
               ]
             }
 
             STRICT RULES:
             1. ONLY provide the JSON block. 
             2. Use concise, professional labels. 
-            3. MANDATORY: Assign each node a 'layer' index (0=Interaction, 1=Gateway/API, 2=Logic/Intelligence, 3=Data/Storage).
-            4. For 'Master Flow Chart', include all major components and their primary interactions across the entire system.
+            3. MANDATORY: Assign each layer an integer (0=Top, 1=Middle, 2=Lower, 3=Bottom).
+            4. 🛑 CRITICAL: DO NOT copy the example nodes! The example above is purely for syntax formatting. You must generate COMPLETELY UNIQUE nodes, edges, and topologies based entirely on the actual repository summary provided to you.
             5. Do not attempt coordinate math; the rendering engine will handle layout.
             6. Header (### Diagram Type) MUST be outside the code block.
 """,

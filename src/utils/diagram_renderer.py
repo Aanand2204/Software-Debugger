@@ -110,14 +110,19 @@ class DiagramRenderer:
                 if s["layer"] == t["layer"]:
                     # Same layer: Bridge path
                     sy = s["y"] + self.box_h / 2 + jitter
-                    if s["x"] < t["x"]:
-                        sx, tx = s["x"] + self.box_w, t["x"]
+                    if s["id"] == t["id"]:
+                        # Self-loop
+                        sx = s["x"] + self.box_w
+                        path = f"M {sx} {sy - 10} C {sx+60} {sy - 20} {sx+60} {sy + 20} {sx} {sy + 10}"
                     else:
-                        sx, tx = s["x"], t["x"] + self.box_w
-                    
-                    # Arc for same-layer connection
-                    ctrl_y = sy - 40 if s["x"] < t["x"] else sy + 40
-                    path = f"M {sx} {sy} Q {(sx+tx)/2} {ctrl_y} {tx} {sy}"
+                        if s["x"] < t["x"]:
+                            sx, tx = s["x"] + self.box_w, t["x"]
+                        else:
+                            sx, tx = s["x"], t["x"] + self.box_w
+                        
+                        # Arc for same-layer connection
+                        ctrl_y = sy - 40 if s["x"] < t["x"] else sy + 40
+                        path = f"M {sx} {sy} Q {(sx+tx)/2} {ctrl_y} {tx} {sy}"
                 else:
                     # Discrete layers: Smooth S-Curve (Cubic Bézier)
                     # Vertical midpoint offset for the curve control points
@@ -129,9 +134,13 @@ class DiagramRenderer:
                         path = f"M {x1} {y1} C {x1} {y1 + c_dist} {x2} {y2 - c_dist} {x2} {y2}"
                     else:
                         # Flowing upwards (Back-reference)
-                        # Use a wider side-arc to minimize clutter
-                        mid_x = min(x1, x2) - 150
-                        path = f"M {x1} {y1-self.box_h} C {mid_x} {y1-self.box_h} {mid_x} {y2+self.box_h} {x2+self.box_w} {y2+self.box_h/2}"
+                        # Go from left side to left side safely
+                        start_x = s["x"]
+                        start_y = s["y"] + self.box_h / 2 + jitter
+                        end_x = t["x"]
+                        end_y = t["y"] + self.box_h / 2 + jitter
+                        mid_x = min(start_x, end_x) - 150
+                        path = f"M {start_x} {start_y} C {mid_x} {start_y} {mid_x} {end_y} {end_x} {end_y}"
                 
                 svg.append(f'  <path d="{path}" fill="none" stroke="{color}" stroke-width="2.5" opacity="0.6" marker-end="url(#arrow)"/>')
 

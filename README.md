@@ -1,27 +1,32 @@
 # 🚀 Autonomous Software Debugging Assistant
 
-A powerful, multi-agent AI system designed to analyze GitHub repositories, detect logical flaws, and generate production-ready patches. Built with **AutoGen**, **Google Gemini**, and **Groq**, this assistant provides a comprehensive suite of debugging and visualization tools.
+A powerful, multi-agent AI system designed to analyze GitHub repositories, detect logical flaws, generate production-ready patches, and test them in a secure sandbox. Built with **AutoGen**, **Google Gemini**, and **Groq**, this assistant provides a comprehensive suite of debugging, patching, and visualization tools.
 
 ---
 
 ## ✨ Key Features
 
 ### 🛠️ Intelligent Debugging
-- **Multi-Agent Flow**: Sequential orchestration between specialized agents: `Code_Parser`, `Bug_Detection`, `Patch_Generator`, and `Reviewer`.
-- **Repo Chat**: Conversational AI interface to ask specific questions about any part of your codebase.
+- **Multi-Agent Orchestration**: Sequential handoffs between specialized agents: `Code_Parser`, `Bug_Detection`, `Patch_Generator`, `Reviewer`, and `Patch_Applier`.
+- **Repo Chat**: Conversational AI interface to ask specific questions about any part of your codebase based on the parsed context.
 
-### 🖼️ Advanced Visualizations
-- **8+ Diagram Types**: Generate Flowcharts, Class Diagrams, Sequence Diagrams, ER Diagrams, and more using **Mermaid 10.9.5**.
-- **Dark Mode Optimization**: Specialized rendering ensures high contrast for arrows and lines on dark backgrounds.
-- **Independent Generation**: Tweak and regenerate diagrams without re-analyzing the entire codebase.
+### 🛡️ Safe Patching Workflow
+- **Isolated Sandbox**: Suggested code patches are first applied to a temporary, isolated clone of your repository.
+- **Dry-Run Testing**: Install dependencies and execute test scripts safely within the UI without affecting your main workspace.
+- **One-Click Apply**: Once testing is verified and successful, changes can be directly synced to your original local directory.
+
+### 🖼️ Advanced System Visualizations
+- **Architectural Rendering**: Dynamically generates Flowcharts, Class Diagrams, Sequence Diagrams, ER Diagrams, and more using an intelligent `DiagramRenderer`.
+- **JSON-to-SVG Pipeline**: Leverages LLMs to output structured JSON topologies, which are then deterministically rendered into clean, beautiful, non-overlapping SVG graphics.
+- **Hot-Reloading**: Independent visualization generation that supports mid-session regeneration and tweak iterations gracefully.
 
 ### 💾 Persistent History
 - **Firestore Integration**: All analyses and generated diagrams are automatically synced and stored in Firebase.
 - **Unified History Tab**: Revisit past analysis sessions with a clean, searchable interface.
 
 ### ⚡ Performance & Stability
-- **Multi-Model Fallback**: Primary integration with **Groq** for speed, with **Google Gemini** as a robust fallback.
-- **Quota Management**: Built-in throttling to ensure stability on Free Tier API limits.
+- **Multi-Model Fallback & Rotation**: Primary integration with **Groq** for speed, with robust fallback to **Google Gemini**. Automatically rotates API keys to bypass rate limits gracefully.
+- **Anti-Hallucination Guard**: A strict AST-based "Nuclear" guard prevents agents from inventing non-existent packages or malicious imports.
 
 ---
 
@@ -35,7 +40,7 @@ A powerful, multi-agent AI system designed to analyze GitHub repositories, detec
 └── src/                # Core Application Logic
     ├── agents/         # AutoGen Agent & Orchestrator Definitions
     ├── database/       # Firebase/Firestore Management
-    ├── utils/          # GitHub Repo Handling
+    ├── utils/          # Diagram Rendering & Repo Handling
     └── config.py       # Enhanced Configuration & Logging
 ```
 
@@ -50,7 +55,7 @@ Create a `.env` file in the root directory:
 GOOGLE_API_KEY=your_gemini_key
 GROQ_API_KEY=your_groq_key_1,your_groq_key_2 (supports comma-separated keys)
 
-# GitHub Token (for private/public cloning)
+# GitHub Token (for remote cloning)
 GITHUB_TOKEN=your_github_pat
 
 # Firebase Configuration
@@ -75,8 +80,9 @@ streamlit run app.py
 ---
 
 ## 🛡️ Usage Tips
-- **Analysis Time**: On Free Tier keys, the system includes a 20-40s delay between phases to avoid rate limits. A full run typically takes ~2-3 minutes.
-- **Visualization Tab**: Use the multi-select menu in the **Visualizations** tab to choose specific diagrams, then click **"Generate Selected Diagrams"** to visualize them instantly.
+- **Analysis Time**: On Free Tier keys, the system might include delays between phases to avoid rate limits. A full run typically takes ~1-3 minutes.
+- **Visualization Tab**: Use the multi-select menu in the **Visualizations** tab to choose specific architectural views, then click **"Regenerate Selected Diagrams"** to map them out instantly.
+- **Patch Testing**: The testing sandbox is primarily active for local repository paths (`Local Repo Path`). Remote GitHub patches are presented as suggestions only.
 
 ---
 *Developed for Advanced Autonomous Software Debugging.*
