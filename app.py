@@ -12,11 +12,6 @@ from src.agents.orchestrator import Orchestrator
 from src.config import logger
 from src.database.db_manager import init_firebase, save_analysis_result, get_analysis_history
 import inspect
-import src.agents.orchestrator as orch_mod
-
-# --- DIAGNOSTIC ---
-orch_file = inspect.getfile(orch_mod.Orchestrator)
-# ------------------
 
 # Diagnostic: Check for autogen dependencies
 try:
@@ -33,11 +28,11 @@ st.set_page_config(page_title="Autonomous Software Debugger", layout="wide")
 st.title("🚀 Autonomous Software Debugger")
 st.markdown("**Welcome to the Codebase Analyzer!** 📂")
 st.markdown("""
-Upload a GitHub repository URL, and our multi-agent system will:
-1. **Analyze** the codebase 📂
-2. **Identify** potential bugs 🐞
-3. **Suggest** patches 🔧
-4. **Generate** PR-ready fixes 🚀
+Provide a GitHub repository URL or Local Directory path, and our multi-agent AI system will:
+1. **Analyze** the codebase and architecture 📂
+2. **Identify** potential bugs and vulnerabilities 🐞
+3. **Generate** dynamic architectural visualizations 🎨
+4. **Suggest & Test** patches in a secure sandbox 🛡️
 """)
 
 # Sidebar for configuration
@@ -53,7 +48,6 @@ with st.sidebar:
     process_button = st.button("Analyze Codebase")
     reset_button = st.button("Reset Session")
     st.sidebar.divider()
-    st.sidebar.caption(f"🔧 Debug: Orchestrator at `{orch_file}`")
 
 if reset_button:
     st.session_state.clear()
