@@ -6,3 +6,5 @@ openai
 langchain
 gitpython
 google-generativeai
+svglib
+reportlab

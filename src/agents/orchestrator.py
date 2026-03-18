@@ -122,7 +122,8 @@ class Orchestrator:
                     print(f"--- Sketching {d_type} Diagram... ---", file=sys.stderr, flush=True)
                     time.sleep(2) # Extra delay
                     prompt_details = "Focus on the step-by-step sequential flow of execution and data logic." if "Flow" in d_type or "Activity" in d_type else "Focus on static structural relationships, entities, and components." if "Class" in d_type or "ER" in d_type or "System" in d_type else "Focus on actors, interactions, and chronological message passing." if "Sequence" in d_type or "Use Case" in d_type else ""
-                    prompt = f"Context:\n{safe_summary}\n\nTask: Generate exactly ONE structural JSON architecture blueprint tailored specifically for a {d_type}.\n{prompt_details}\nDO NOT just output a generic system architecture. DO NOT GENERATE SVG DIRECTLY."
+                    schema_req = "\nOUTPUT EXACTLY THIS JSON FORMAT:\n```json\n{\"nodes\": [{\"id\": \"1\", \"label\": \"UI/Client\", \"layer\": 0}, {\"id\": \"2\", \"label\": \"API/Server\", \"layer\": 1}], \"edges\": [{\"from\": \"1\", \"to\": \"2\"}]}\n```\nNote: 'layer' must be 0 (UI/External), 1 (API/Gateway), 2 (Services), or 3 (Database)."
+                    prompt = f"Context:\n{safe_summary}\n\nTask: Generate exactly ONE structural JSON architecture blueprint tailored specifically for a {d_type}.\n{prompt_details}\nDO NOT just output a generic system architecture. DO NOT GENERATE SVG DIRECTLY.{schema_req}"
                     diag, is_err = self._run_step_with_rotation(self.factory.create_diagram_generator_agent, user_proxy, prompt, f"{d_type} Diagram")
                     if is_err: return [{"name": "Error", "content": diag}]
                     # Programmatically render JSON to professional SVG
@@ -276,7 +277,8 @@ class Orchestrator:
                 print(f"--- Sketching {d_type} Diagram... ---", file=sys.stderr, flush=True)
                 time.sleep(2)
                 prompt_details = "Focus on the step-by-step sequential flow of execution and data logic." if "Flow" in d_type or "Activity" in d_type else "Focus on static structural relationships, entities, and components." if "Class" in d_type or "ER" in d_type or "System" in d_type else "Focus on actors, interactions, and chronological message passing." if "Sequence" in d_type or "Use Case" in d_type else ""
-                prompt = f"Context:\n{safe_summary}\n\nTask: Generate exactly ONE structural JSON architecture blueprint tailored specifically for a {d_type}.\n{prompt_details}\nDO NOT just output a generic system architecture. DO NOT GENERATE SVG DIRECTLY."
+                schema_req = "\nOUTPUT EXACTLY THIS JSON FORMAT:\n```json\n{\"nodes\": [{\"id\": \"1\", \"label\": \"UI/Client\", \"layer\": 0}, {\"id\": \"2\", \"label\": \"API/Server\", \"layer\": 1}], \"edges\": [{\"from\": \"1\", \"to\": \"2\"}]}\n```\nNote: 'layer' must be 0 (UI/External), 1 (API/Gateway), 2 (Services), or 3 (Database)."
+                prompt = f"Context:\n{safe_summary}\n\nTask: Generate exactly ONE structural JSON architecture blueprint tailored specifically for a {d_type}.\n{prompt_details}\nDO NOT just output a generic system architecture. DO NOT GENERATE SVG DIRECTLY.{schema_req}"
                 diag, is_err = self._run_step_with_rotation(self.factory.create_diagram_generator_agent, user_proxy, prompt, f"{d_type} Diagram")
                 if is_err: return {"name": "Error", "content": diag}
                 # Programmatically render JSON to professional SVG
