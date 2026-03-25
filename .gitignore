@@ -14,4 +14,7 @@ credentials/
 workspace/
 src/workspace/
 .cache/
-
+app.log
+DEBUG_GUARD.txt
+git_status.txt
+packages.txt
